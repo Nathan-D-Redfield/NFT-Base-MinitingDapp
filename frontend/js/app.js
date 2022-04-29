@@ -24,15 +24,26 @@ window.addEventListener("DOMContentLoaded", async () => {
     });
   }
 
+  // const splide = new Splide(".splide", {
+  //   type: "loop",
+  //   arrows: false,
+  //   perMove: 3,
+  //   pagination: false,
+  //   autoplay: true,
+  //   direction: 'ttb',
+  //   height: "calc(100vh - 90px)",
+  //   width: '30vw',
+  //   autoHeight: true,
+  // });
+
   const splide = new Splide(".splide", {
-    type: "loop",
+    type: "fade",
     arrows: false,
-    perMove: 3,
+    speed: Number = 5000,
     pagination: false,
+    rewind:true,
     autoplay: true,
-    direction: 'ttb',
-    height: "calc(100vh - 90px)",
-    width: '30vw',
+    autowidth:true,
     autoHeight: true,
   });
   splide.mount();
